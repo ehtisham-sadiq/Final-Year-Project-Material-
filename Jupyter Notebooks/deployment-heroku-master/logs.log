@@ -1,0 +1,528 @@
+2022-10-11 20:05:01,183:INFO:PyCaret Supervised Module
+2022-10-11 20:05:01,184:INFO:ML Usecase: regression
+2022-10-11 20:05:01,185:INFO:version 2.3.10
+2022-10-11 20:05:01,185:INFO:Initializing setup()
+2022-10-11 20:05:01,185:INFO:setup(target=charges, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=False, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=123, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-11 20:05:01,185:INFO:Checking environment
+2022-10-11 20:05:01,185:INFO:python_version: 3.8.10
+2022-10-11 20:05:01,185:INFO:python_build: ('default', 'Jun 22 2022 20:18:18')
+2022-10-11 20:05:01,186:INFO:machine: x86_64
+2022-10-11 20:05:01,186:INFO:platform: Linux-5.15.0-48-generic-x86_64-with-glibc2.29
+2022-10-11 20:05:01,186:INFO:Memory: svmem(total=16510140416, available=10014179328, percent=39.3, used=5066166272, free=3662053376, active=2492608512, inactive=8824877056, buffers=376815616, cached=7405105152, shared=1080483840, slab=836587520)
+2022-10-11 20:05:01,187:INFO:Physical Core: 4
+2022-10-11 20:05:01,188:INFO:Logical Core: 8
+2022-10-11 20:05:01,188:INFO:Checking libraries
+2022-10-11 20:05:01,188:INFO:pd==1.4.2
+2022-10-11 20:05:01,188:INFO:numpy==1.19.5
+2022-10-11 20:05:01,188:INFO:sklearn==0.23.2
+2022-10-11 20:05:01,188:INFO:lightgbm==3.3.2
+2022-10-11 20:05:01,188:WARNING:catboost not found
+2022-10-11 20:05:01,278:INFO:xgboost==1.6.2
+2022-10-11 20:05:01,278:INFO:mlflow==1.29.0
+2022-10-11 20:05:01,278:INFO:Checking Exceptions
+2022-10-11 20:05:01,278:INFO:Declaring global variables
+2022-10-11 20:05:01,279:INFO:USI: e909
+2022-10-11 20:05:01,279:INFO:pycaret_globals: {'fix_imbalance_param', '_all_metrics', 'create_model_container', '_all_models', 'display_container', 'y_train', 'html_param', 'fold_param', 'X', 'fold_generator', '_ml_usecase', 'X_test', 'gpu_param', '_gpu_n_jobs_param', '_all_models_internal', 'fold_shuffle_param', 'y', 'exp_name_log', 'transform_target_method_param', 'seed', 'prep_pipe', 'logging_param', 'transform_target_param', 'log_plots_param', '_internal_pipeline', 'dashboard_logger', 'X_train', 'imputation_classifier', 'target_param', 'USI', 'data_before_preprocess', 'stratify_param', '_available_plots', 'pycaret_globals', 'fold_groups_param_full', 'imputation_regressor', 'experiment__', 'n_jobs_param', 'fold_groups_param', 'y_test', 'fix_imbalance_method_param', 'iterative_imputation_iters_param', 'master_model_container'}
+2022-10-11 20:05:01,279:INFO:Preparing display monitor
+2022-10-11 20:05:01,279:INFO:Preparing display monitor
+2022-10-11 20:05:01,288:INFO:Importing libraries
+2022-10-11 20:05:01,288:INFO:Copying data for preprocessing
+2022-10-11 20:05:01,293:INFO:Declaring preprocessing parameters
+2022-10-11 20:05:01,295:INFO:Creating preprocessing pipeline
+2022-10-11 20:05:01,298:INFO:Preprocessing pipeline created successfully
+2022-10-11 20:05:01,298:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-11 20:05:01,298:INFO:Creating global containers
+2022-10-11 20:05:01,299:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-11 20:05:03,224:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-11 20:05:03,317:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-11 20:05:03,318:INFO:Creating grid variables
+2022-10-11 20:05:03,329:INFO:create_model_container: 0
+2022-10-11 20:05:03,330:INFO:master_model_container: 0
+2022-10-11 20:05:03,330:INFO:display_container: 1
+2022-10-11 20:05:03,334:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('scaling', 'passthrough'), ('P_transform', 'passthrough'),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-10-11 20:05:03,334:INFO:setup() succesfully completed......................................
+2022-10-11 20:05:04,053:INFO:Initializing create_model()
+2022-10-11 20:05:04,055:INFO:create_model(estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-10-11 20:05:04,055:INFO:Checking exceptions
+2022-10-11 20:05:04,055:INFO:Preparing display monitor
+2022-10-11 20:05:04,090:INFO:Importing libraries
+2022-10-11 20:05:04,090:INFO:Copying training dataset
+2022-10-11 20:05:04,092:INFO:Defining folds
+2022-10-11 20:05:04,093:INFO:Declaring metric variables
+2022-10-11 20:05:04,108:INFO:Importing untrained model
+2022-10-11 20:05:04,123:INFO:Linear Regression Imported succesfully
+2022-10-11 20:05:04,134:INFO:Starting cross validation
+2022-10-11 20:05:04,137:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-11 20:05:06,797:INFO:Calculating mean and std
+2022-10-11 20:05:06,822:INFO:Creating metrics dataframe
+2022-10-11 20:05:06,849:INFO:Finalizing model
+2022-10-11 20:05:06,897:INFO:Uploading results into container
+2022-10-11 20:05:06,898:INFO:Uploading model into container now
+2022-10-11 20:05:06,907:INFO:create_model_container: 1
+2022-10-11 20:05:06,907:INFO:master_model_container: 1
+2022-10-11 20:05:06,907:INFO:display_container: 2
+2022-10-11 20:05:06,908:INFO:LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False)
+2022-10-11 20:05:06,908:INFO:create_model() succesfully completed......................................
+2022-10-11 20:05:08,940:INFO:Initializing plot_model()
+2022-10-11 20:05:08,941:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=residuals, plot_kwargs=None, save=False, scale=1, system=True)
+2022-10-11 20:05:08,941:INFO:Checking exceptions
+2022-10-11 20:05:08,942:INFO:Preparing display monitor
+2022-10-11 20:05:08,955:INFO:Preloading libraries
+2022-10-11 20:05:08,957:INFO:Copying training dataset
+2022-10-11 20:05:08,958:INFO:Copying test dataset
+2022-10-11 20:05:08,959:INFO:Plot type: residuals
+2022-10-11 20:05:09,059:INFO:Fitting Model
+2022-10-11 20:05:09,099:INFO:Scoring test/hold-out set
+2022-10-11 20:05:09,517:INFO:Visual Rendered Successfully
+2022-10-11 20:05:09,603:INFO:plot_model() succesfully completed......................................
+2022-10-11 20:05:12,693:INFO:PyCaret Supervised Module
+2022-10-11 20:05:12,694:INFO:ML Usecase: regression
+2022-10-11 20:05:12,694:INFO:version 2.3.10
+2022-10-11 20:05:12,694:INFO:Initializing setup()
+2022-10-11 20:05:12,694:INFO:setup(target=charges, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=['age', 'bmi'], remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=123, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-11 20:05:12,694:INFO:Checking environment
+2022-10-11 20:05:12,695:INFO:python_version: 3.8.10
+2022-10-11 20:05:12,695:INFO:python_build: ('default', 'Jun 22 2022 20:18:18')
+2022-10-11 20:05:12,696:INFO:machine: x86_64
+2022-10-11 20:05:12,696:INFO:platform: Linux-5.15.0-48-generic-x86_64-with-glibc2.29
+2022-10-11 20:05:12,697:INFO:Memory: svmem(total=16510140416, available=9017524224, percent=45.4, used=6060720128, free=2662359040, active=2493906944, inactive=9823518720, buffers=376864768, cached=7410196480, shared=1082585088, slab=836571136)
+2022-10-11 20:05:12,698:INFO:Physical Core: 4
+2022-10-11 20:05:12,698:INFO:Logical Core: 8
+2022-10-11 20:05:12,698:INFO:Checking libraries
+2022-10-11 20:05:12,698:INFO:pd==1.4.2
+2022-10-11 20:05:12,698:INFO:numpy==1.19.5
+2022-10-11 20:05:12,698:INFO:sklearn==0.23.2
+2022-10-11 20:05:12,699:INFO:lightgbm==3.3.2
+2022-10-11 20:05:12,699:WARNING:catboost not found
+2022-10-11 20:05:12,699:INFO:xgboost==1.6.2
+2022-10-11 20:05:12,699:INFO:mlflow==1.29.0
+2022-10-11 20:05:12,699:INFO:Checking Exceptions
+2022-10-11 20:05:12,700:INFO:Declaring global variables
+2022-10-11 20:05:12,700:INFO:USI: 2ef5
+2022-10-11 20:05:12,700:INFO:pycaret_globals: {'fix_imbalance_param', '_all_metrics', 'create_model_container', '_all_models', 'display_container', 'y_train', 'html_param', 'fold_param', 'X', 'fold_generator', '_ml_usecase', 'X_test', 'gpu_param', '_gpu_n_jobs_param', '_all_models_internal', 'fold_shuffle_param', 'y', 'exp_name_log', 'transform_target_method_param', 'seed', 'prep_pipe', 'logging_param', 'transform_target_param', 'log_plots_param', '_internal_pipeline', 'dashboard_logger', 'X_train', 'imputation_classifier', 'target_param', 'USI', 'data_before_preprocess', 'stratify_param', '_available_plots', 'pycaret_globals', 'fold_groups_param_full', 'imputation_regressor', 'experiment__', 'n_jobs_param', 'fold_groups_param', 'y_test', 'fix_imbalance_method_param', 'iterative_imputation_iters_param', 'master_model_container'}
+2022-10-11 20:05:12,700:INFO:Preparing display monitor
+2022-10-11 20:05:12,700:INFO:Preparing display monitor
+2022-10-11 20:05:12,712:INFO:Importing libraries
+2022-10-11 20:05:12,712:INFO:Copying data for preprocessing
+2022-10-11 20:05:12,719:INFO:Declaring preprocessing parameters
+2022-10-11 20:05:12,720:INFO:Creating preprocessing pipeline
+2022-10-11 20:05:12,724:INFO:Preprocessing pipeline created successfully
+2022-10-11 20:05:12,724:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-11 20:05:12,724:INFO:Creating global containers
+2022-10-11 20:05:12,724:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-11 20:05:17,198:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-11 20:05:17,300:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-11 20:05:17,300:INFO:Creating grid variables
+2022-10-11 20:05:17,309:INFO:create_model_container: 0
+2022-10-11 20:05:17,309:INFO:master_model_container: 0
+2022-10-11 20:05:17,309:INFO:display_container: 1
+2022-10-11 20:05:17,315:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough')],
+         verbose=False)
+2022-10-11 20:05:17,315:INFO:setup() succesfully completed......................................
+2022-10-11 20:05:29,089:INFO:Initializing create_model()
+2022-10-11 20:05:29,090:INFO:create_model(estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-10-11 20:05:29,091:INFO:Checking exceptions
+2022-10-11 20:05:29,091:INFO:Preparing display monitor
+2022-10-11 20:05:29,117:INFO:Importing libraries
+2022-10-11 20:05:29,117:INFO:Copying training dataset
+2022-10-11 20:05:29,118:INFO:Defining folds
+2022-10-11 20:05:29,118:INFO:Declaring metric variables
+2022-10-11 20:05:29,125:INFO:Importing untrained model
+2022-10-11 20:05:29,132:INFO:Linear Regression Imported succesfully
+2022-10-11 20:05:29,145:INFO:Starting cross validation
+2022-10-11 20:05:29,146:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-11 20:05:29,189:INFO:Calculating mean and std
+2022-10-11 20:05:29,190:INFO:Creating metrics dataframe
+2022-10-11 20:05:29,198:INFO:Finalizing model
+2022-10-11 20:05:29,235:INFO:Uploading results into container
+2022-10-11 20:05:29,236:INFO:Uploading model into container now
+2022-10-11 20:05:29,265:INFO:create_model_container: 1
+2022-10-11 20:05:29,265:INFO:master_model_container: 1
+2022-10-11 20:05:29,265:INFO:display_container: 2
+2022-10-11 20:05:29,266:INFO:LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False)
+2022-10-11 20:05:29,266:INFO:create_model() succesfully completed......................................
+2022-10-11 20:05:31,481:INFO:Initializing plot_model()
+2022-10-11 20:05:31,481:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=residuals, plot_kwargs=None, save=False, scale=1, system=True)
+2022-10-11 20:05:31,482:INFO:Checking exceptions
+2022-10-11 20:05:31,482:INFO:Preparing display monitor
+2022-10-11 20:05:31,495:INFO:Preloading libraries
+2022-10-11 20:05:31,497:INFO:Copying training dataset
+2022-10-11 20:05:31,497:INFO:Copying test dataset
+2022-10-11 20:05:31,498:INFO:Plot type: residuals
+2022-10-11 20:05:31,532:INFO:Fitting Model
+2022-10-11 20:05:31,588:INFO:Scoring test/hold-out set
+2022-10-11 20:05:31,929:INFO:Visual Rendered Successfully
+2022-10-11 20:05:32,030:INFO:plot_model() succesfully completed......................................
+2022-10-11 20:05:32,699:INFO:Initializing save_model()
+2022-10-11 20:05:32,699:INFO:save_model(model=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), model_name=deployment_28042020, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-10-11 20:05:32,699:INFO:Adding model into prep_pipe
+2022-10-11 20:05:32,731:INFO:deployment_28042020.pkl saved in current working directory
+2022-10-11 20:05:32,738:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough'),
+                ['trained_model',
+                 LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1,
+                                  normalize=False)]],
+         verbose=False)
+2022-10-11 20:05:32,738:INFO:save_model() successfully completed......................................
+2022-10-11 20:05:34,572:INFO:Initializing load_model()
+2022-10-11 20:05:34,573:INFO:load_model(model_name=deployment_28042020, platform=None, authentication=None, verbose=True)
+2022-10-12 18:53:33,991:INFO:Initializing load_model()
+2022-10-12 18:53:33,991:INFO:load_model(model_name=deployment_28042020, platform=None, authentication=None, verbose=True)
+2022-10-12 18:53:35,538:INFO:Initializing load_model()
+2022-10-12 18:53:35,538:INFO:load_model(model_name=deployment_28042020, platform=None, authentication=None, verbose=True)
+2022-10-12 18:55:42,183:INFO:Initializing predict_model()
+2022-10-12 18:55:42,183:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      target='charges')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target=...
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough'),
+                ['trained_model', LinearRegression(n_jobs=-1)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=0, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-10-12 18:55:42,183:INFO:Checking exceptions
+2022-10-12 18:55:42,183:INFO:Preloading libraries
+2022-10-12 20:02:06,437:INFO:Initializing load_model()
+2022-10-12 20:02:06,438:INFO:load_model(model_name=deployment_28042020, platform=None, authentication=None, verbose=True)
+2022-10-12 20:02:08,650:INFO:Initializing load_model()
+2022-10-12 20:02:08,650:INFO:load_model(model_name=deployment_28042020, platform=None, authentication=None, verbose=True)
+2022-10-12 20:26:01,190:INFO:PyCaret Supervised Module
+2022-10-12 20:26:01,190:INFO:ML Usecase: regression
+2022-10-12 20:26:01,190:INFO:version 2.3.10
+2022-10-12 20:26:01,191:INFO:Initializing setup()
+2022-10-12 20:26:01,191:INFO:setup(target=charges, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=False, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=123, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-12 20:26:01,191:INFO:Checking environment
+2022-10-12 20:26:01,191:INFO:python_version: 3.8.10
+2022-10-12 20:26:01,191:INFO:python_build: ('default', 'Jun 22 2022 20:18:18')
+2022-10-12 20:26:01,191:INFO:machine: x86_64
+2022-10-12 20:26:01,191:INFO:platform: Linux-5.15.0-48-generic-x86_64-with-glibc2.29
+2022-10-12 20:26:01,191:INFO:Memory: svmem(total=16510140416, available=10494214144, percent=36.4, used=4424527872, free=2229280768, active=3428298752, inactive=8677810176, buffers=983658496, cached=8872673280, shared=1242845184, slab=1406976000)
+2022-10-12 20:26:01,192:INFO:Physical Core: 4
+2022-10-12 20:26:01,192:INFO:Logical Core: 8
+2022-10-12 20:26:01,192:INFO:Checking libraries
+2022-10-12 20:26:01,192:INFO:pd==1.4.2
+2022-10-12 20:26:01,192:INFO:numpy==1.19.5
+2022-10-12 20:26:01,192:INFO:sklearn==0.23.2
+2022-10-12 20:26:01,192:INFO:lightgbm==3.3.2
+2022-10-12 20:26:01,192:WARNING:catboost not found
+2022-10-12 20:26:01,267:INFO:xgboost==1.6.2
+2022-10-12 20:26:01,268:INFO:mlflow==1.29.0
+2022-10-12 20:26:01,268:INFO:Checking Exceptions
+2022-10-12 20:26:01,268:INFO:Declaring global variables
+2022-10-12 20:26:01,268:INFO:USI: 3999
+2022-10-12 20:26:01,268:INFO:pycaret_globals: {'seed', '_gpu_n_jobs_param', 'X_test', 'exp_name_log', 'display_container', 'log_plots_param', 'dashboard_logger', 'fix_imbalance_method_param', 'fold_param', '_ml_usecase', 'create_model_container', '_all_metrics', '_internal_pipeline', 'imputation_regressor', '_available_plots', 'gpu_param', 'y_test', 'X_train', 'logging_param', 'master_model_container', 'y_train', 'fold_groups_param_full', 'html_param', 'stratify_param', 'target_param', 'transform_target_method_param', 'transform_target_param', 'fold_generator', 'y', 'experiment__', '_all_models', 'fix_imbalance_param', 'n_jobs_param', 'X', 'USI', 'prep_pipe', 'pycaret_globals', 'iterative_imputation_iters_param', 'fold_groups_param', 'data_before_preprocess', 'imputation_classifier', 'fold_shuffle_param', '_all_models_internal'}
+2022-10-12 20:26:01,268:INFO:Preparing display monitor
+2022-10-12 20:26:01,268:INFO:Preparing display monitor
+2022-10-12 20:26:01,277:INFO:Importing libraries
+2022-10-12 20:26:01,277:INFO:Copying data for preprocessing
+2022-10-12 20:26:01,282:INFO:Declaring preprocessing parameters
+2022-10-12 20:26:01,283:INFO:Creating preprocessing pipeline
+2022-10-12 20:26:01,288:INFO:Preprocessing pipeline created successfully
+2022-10-12 20:26:01,288:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-12 20:26:01,288:INFO:Creating global containers
+2022-10-12 20:26:01,289:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-12 20:26:29,204:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-12 20:26:29,303:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-12 20:26:29,304:INFO:Creating grid variables
+2022-10-12 20:26:29,317:INFO:create_model_container: 0
+2022-10-12 20:26:29,318:INFO:master_model_container: 0
+2022-10-12 20:26:29,318:INFO:display_container: 1
+2022-10-12 20:26:29,321:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('scaling', 'passthrough'), ('P_transform', 'passthrough'),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-10-12 20:26:29,321:INFO:setup() succesfully completed......................................
+2022-10-12 20:26:41,577:INFO:Initializing create_model()
+2022-10-12 20:26:41,577:INFO:create_model(estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-10-12 20:26:41,578:INFO:Checking exceptions
+2022-10-12 20:26:41,578:INFO:Preparing display monitor
+2022-10-12 20:26:41,594:INFO:Importing libraries
+2022-10-12 20:26:41,595:INFO:Copying training dataset
+2022-10-12 20:26:41,595:INFO:Defining folds
+2022-10-12 20:26:41,595:INFO:Declaring metric variables
+2022-10-12 20:26:41,601:INFO:Importing untrained model
+2022-10-12 20:26:41,608:INFO:Linear Regression Imported succesfully
+2022-10-12 20:26:41,621:INFO:Starting cross validation
+2022-10-12 20:26:41,625:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-12 20:26:44,821:INFO:Calculating mean and std
+2022-10-12 20:26:44,822:INFO:Creating metrics dataframe
+2022-10-12 20:26:44,833:INFO:Finalizing model
+2022-10-12 20:26:44,873:INFO:Uploading results into container
+2022-10-12 20:26:44,873:INFO:Uploading model into container now
+2022-10-12 20:26:44,889:INFO:create_model_container: 1
+2022-10-12 20:26:44,889:INFO:master_model_container: 1
+2022-10-12 20:26:44,889:INFO:display_container: 2
+2022-10-12 20:26:44,889:INFO:LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False)
+2022-10-12 20:26:44,889:INFO:create_model() succesfully completed......................................
+2022-10-12 20:26:47,874:INFO:Initializing plot_model()
+2022-10-12 20:26:47,874:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=residuals, plot_kwargs=None, save=False, scale=1, system=True)
+2022-10-12 20:26:47,874:INFO:Checking exceptions
+2022-10-12 20:26:47,874:INFO:Preparing display monitor
+2022-10-12 20:26:47,880:INFO:Preloading libraries
+2022-10-12 20:26:47,881:INFO:Copying training dataset
+2022-10-12 20:26:47,881:INFO:Copying test dataset
+2022-10-12 20:26:47,881:INFO:Plot type: residuals
+2022-10-12 20:26:47,952:INFO:Fitting Model
+2022-10-12 20:26:47,995:INFO:Scoring test/hold-out set
+2022-10-12 20:26:48,477:INFO:Visual Rendered Successfully
+2022-10-12 20:26:48,565:INFO:plot_model() succesfully completed......................................
+2022-10-12 20:28:05,134:INFO:PyCaret Supervised Module
+2022-10-12 20:28:05,134:INFO:ML Usecase: regression
+2022-10-12 20:28:05,134:INFO:version 2.3.10
+2022-10-12 20:28:05,134:INFO:Initializing setup()
+2022-10-12 20:28:05,134:INFO:setup(target=charges, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=['age', 'bmi'], remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=True, polynomial_degree=2, trigonometry_features=True, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=True, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=123, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-10-12 20:28:05,134:INFO:Checking environment
+2022-10-12 20:28:05,134:INFO:python_version: 3.8.10
+2022-10-12 20:28:05,134:INFO:python_build: ('default', 'Jun 22 2022 20:18:18')
+2022-10-12 20:28:05,134:INFO:machine: x86_64
+2022-10-12 20:28:05,134:INFO:platform: Linux-5.15.0-48-generic-x86_64-with-glibc2.29
+2022-10-12 20:28:05,135:INFO:Memory: svmem(total=16510140416, available=9565147136, percent=42.1, used=5338574848, free=1286660096, active=3429793792, inactive=9602514944, buffers=983920640, cached=8900984832, shared=1257865216, slab=1408143360)
+2022-10-12 20:28:05,135:INFO:Physical Core: 4
+2022-10-12 20:28:05,135:INFO:Logical Core: 8
+2022-10-12 20:28:05,135:INFO:Checking libraries
+2022-10-12 20:28:05,135:INFO:pd==1.4.2
+2022-10-12 20:28:05,135:INFO:numpy==1.19.5
+2022-10-12 20:28:05,135:INFO:sklearn==0.23.2
+2022-10-12 20:28:05,135:INFO:lightgbm==3.3.2
+2022-10-12 20:28:05,135:WARNING:catboost not found
+2022-10-12 20:28:05,135:INFO:xgboost==1.6.2
+2022-10-12 20:28:05,135:INFO:mlflow==1.29.0
+2022-10-12 20:28:05,135:INFO:Checking Exceptions
+2022-10-12 20:28:05,136:INFO:Declaring global variables
+2022-10-12 20:28:05,136:INFO:USI: e16f
+2022-10-12 20:28:05,136:INFO:pycaret_globals: {'seed', '_gpu_n_jobs_param', 'X_test', 'exp_name_log', 'display_container', 'log_plots_param', 'dashboard_logger', 'fix_imbalance_method_param', 'fold_param', '_ml_usecase', 'create_model_container', '_all_metrics', '_internal_pipeline', 'imputation_regressor', '_available_plots', 'gpu_param', 'y_test', 'X_train', 'logging_param', 'master_model_container', 'y_train', 'fold_groups_param_full', 'html_param', 'stratify_param', 'target_param', 'transform_target_method_param', 'transform_target_param', 'fold_generator', 'y', 'experiment__', '_all_models', 'fix_imbalance_param', 'n_jobs_param', 'X', 'USI', 'prep_pipe', 'pycaret_globals', 'iterative_imputation_iters_param', 'fold_groups_param', 'data_before_preprocess', 'imputation_classifier', 'fold_shuffle_param', '_all_models_internal'}
+2022-10-12 20:28:05,136:INFO:Preparing display monitor
+2022-10-12 20:28:05,136:INFO:Preparing display monitor
+2022-10-12 20:28:05,147:INFO:Importing libraries
+2022-10-12 20:28:05,147:INFO:Copying data for preprocessing
+2022-10-12 20:28:05,154:INFO:Declaring preprocessing parameters
+2022-10-12 20:28:05,155:INFO:Creating preprocessing pipeline
+2022-10-12 20:28:05,159:INFO:Preprocessing pipeline created successfully
+2022-10-12 20:28:05,160:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-10-12 20:28:05,160:INFO:Creating global containers
+2022-10-12 20:28:05,160:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-10-12 20:30:43,869:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-12 20:30:43,981:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-10-12 20:30:43,982:INFO:Creating grid variables
+2022-10-12 20:30:43,991:INFO:create_model_container: 0
+2022-10-12 20:30:43,992:INFO:master_model_container: 0
+2022-10-12 20:30:43,992:INFO:display_container: 1
+2022-10-12 20:30:43,998:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough')],
+         verbose=False)
+2022-10-12 20:30:43,998:INFO:setup() succesfully completed......................................
+2022-10-12 20:31:11,669:INFO:Initializing create_model()
+2022-10-12 20:31:11,669:INFO:create_model(estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-10-12 20:31:11,670:INFO:Checking exceptions
+2022-10-12 20:31:11,670:INFO:Preparing display monitor
+2022-10-12 20:31:11,686:INFO:Importing libraries
+2022-10-12 20:31:11,686:INFO:Copying training dataset
+2022-10-12 20:31:11,687:INFO:Defining folds
+2022-10-12 20:31:11,687:INFO:Declaring metric variables
+2022-10-12 20:31:11,694:INFO:Importing untrained model
+2022-10-12 20:31:11,701:INFO:Linear Regression Imported succesfully
+2022-10-12 20:31:11,716:INFO:Starting cross validation
+2022-10-12 20:31:11,716:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-10-12 20:31:11,780:INFO:Calculating mean and std
+2022-10-12 20:31:11,782:INFO:Creating metrics dataframe
+2022-10-12 20:31:11,800:INFO:Finalizing model
+2022-10-12 20:31:11,856:INFO:Uploading results into container
+2022-10-12 20:31:11,856:INFO:Uploading model into container now
+2022-10-12 20:31:11,880:INFO:create_model_container: 1
+2022-10-12 20:31:11,889:INFO:master_model_container: 1
+2022-10-12 20:31:11,890:INFO:display_container: 2
+2022-10-12 20:31:11,891:INFO:LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False)
+2022-10-12 20:31:11,891:INFO:create_model() succesfully completed......................................
+2022-10-12 20:31:15,236:INFO:Initializing plot_model()
+2022-10-12 20:31:15,236:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=residuals, plot_kwargs=None, save=False, scale=1, system=True)
+2022-10-12 20:31:15,236:INFO:Checking exceptions
+2022-10-12 20:31:15,236:INFO:Preparing display monitor
+2022-10-12 20:31:15,242:INFO:Preloading libraries
+2022-10-12 20:31:15,243:INFO:Copying training dataset
+2022-10-12 20:31:15,243:INFO:Copying test dataset
+2022-10-12 20:31:15,243:INFO:Plot type: residuals
+2022-10-12 20:31:15,266:INFO:Fitting Model
+2022-10-12 20:31:15,324:INFO:Scoring test/hold-out set
+2022-10-12 20:31:15,693:INFO:Visual Rendered Successfully
+2022-10-12 20:31:15,780:INFO:plot_model() succesfully completed......................................
+2022-10-12 20:32:30,032:INFO:Initializing save_model()
+2022-10-12 20:32:30,032:INFO:save_model(model=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), model_name=deployment_28042020, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('dummy', Dummify(target='charges')),
+                ('fix_perfect', Remove_100(target='charges')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-10-12 20:32:30,032:INFO:Adding model into prep_pipe
+2022-10-12 20:32:30,044:INFO:deployment_28042020.pkl saved in current working directory
+2022-10-12 20:32:30,052:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             n_jobs=-1, random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', 'passthrough'),
+                ['trained_model',
+                 LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1,
+                                  normalize=False)]],
+         verbose=False)
+2022-10-12 20:32:30,052:INFO:save_model() successfully completed......................................
