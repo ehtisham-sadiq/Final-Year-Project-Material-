@@ -28,9 +28,16 @@ with st.form("my_form"):
     'pclass':[pclass],
     'TravelAlone':[TravelAlone]
     }
+    
+    # Convert Dictionary into dataframe
     input_df = pd.DataFrame(input_dict, index=[0])
+    
+    # use dataframe to predict result by passing into predict method
     result = model_file.predict(input_df)[0]
+    
+   # create a button in the form
     submitted = st.form_submit_button("Predict")
+    
     if submitted:
         if result == '0':
             st.write('Sorry, you did not survive the Titanic.')
