@@ -2,7 +2,7 @@
 - 02-02-2023
 
 
-# End-to-End Project: Data Science Salary Estimator
+# End-to-End Project : Automated Salary Estimator for Data Scientists
 - **Project Overview/Planning**
 - **Data Collection**
 - **Data Cleaning**
